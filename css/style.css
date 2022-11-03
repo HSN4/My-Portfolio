@@ -655,7 +655,6 @@ html{
     transform: translateY(30%);
 }
 .my-works .container .templet:nth-child(1).active{
-    margin-top: 50px;
     transform: translateY(0px);
     opacity: 1;
 }
@@ -710,6 +709,9 @@ html{
 @media (max-width:620px){
     .my-works .container{
         gap: 0px;
+    }
+    .my-works .container .templet:nth-child(1).active{
+    margin-top: 50px;
     }
 }
 /* ================================= contact me ======================================= */
