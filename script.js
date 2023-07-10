@@ -1,3 +1,25 @@
+
+let cursor = document.querySelector(".cursor"),
+cursorScale = document.querySelectorAll(".cursor-Scale");
+document.addEventListener('mousemove',e =>{
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+})
+
+cursorScale.forEach(link =>{
+    link.addEventListener("mouseleave",()=>{
+        cursor.classList.remove("grow" )
+        cursor.classList.remove("grow-small")
+
+    });
+    link.addEventListener("mousemove",()=>{
+        cursor.classList.add("grow" )
+        if(link.classList.contains("small")){
+            cursor.classList.remove("grow"),
+            cursor.classList.add("grow-small")
+        }
+    })
+})
 // welcome page and landing information --------------------------------
 var wellcome = document.querySelector(".welcome"),
     im = document.querySelector(".landing .container img"),
@@ -27,11 +49,6 @@ document.querySelectorAll(".nav-link").forEach((item)=>{ item.
         nav.classList.remove("active")});
 });
 
-// landing --------------------------------------------------------------
-
-
-
-
 // link small screen------------------------------------------------------
 document.querySelectorAll("ul li a") .forEach((itm) =>{
     itm.addEventListener("click",()=> {
@@ -56,63 +73,56 @@ sun_Icon.onclick = function(){
 
 // animation 
 var skills = document.querySelector(".my-skills"),
-    header1 = document.querySelector(".my-skills h1")
+    header1 = document.querySelector(".my-skills h1");
 
 var fter=document.querySelector(".my-skills h1::after"),
-    box1=document.querySelector(".my-skills .container .box:nth-child(1)"),
-    box2=document.querySelector(".my-skills .container .box:nth-child(2)"),
-    box3=document.querySelector(".my-skills .container .box:nth-child(3)"),
-    icon1 = document.querySelectorAll(".icon");
+    allbox = Array.from(document.querySelectorAll(".container .box"));
 
 var myWork =document.querySelector(".my-works"),
     templat=Array.from( document.querySelectorAll(".templet")),
-    heading3=document.querySelector(".my-works h3");
+    heading3=document.querySelector(".my-works h3"),
+    category=document.querySelector(".category");
 
 
 window.onscroll=function(){
-    if ( window.scrollY >= skills.offsetTop -300  &&  window.scrollY <= skills.offsetTop +350  ){
-        console.log(skills.offsetTop)
-        header1.classList.add("active");        
-    }else{
-        header1.classList.remove("active");
-    }
-
-    if(window.scrollY >= skills.offsetTop -200 && window.scrollY <= skills.offsetTop +350){
-        box1.classList.add("active");
-        box2.classList.add("active");
-        box3.classList.add("active");
-        icon1.forEach(element => {
-            element.classList.add("active")
-        });   
-    }else{
-        box1.classList.remove("active");
-        box2.classList.remove("active");
-        box3.classList.remove("active");
-        icon1.forEach(element => {
-            element.classList.remove("active")
-        });
-        
-    }
+        if ( window.scrollY >= skills.offsetTop -300  &&  window.scrollY <= skills.offsetTop +350  ){
+            header1.classList.add("active");
     
-    if(window.scrollY >= myWork.offsetTop -400 && window.scrollY<=myWork.offsetTop+200 ){
-            heading3.classList.add("active")
-            setTimeout(() => {
-                    templat[0].classList.add("active")
-            },600);
-            setTimeout(() => {
-                   templat[1].classList.add("active")
-            },1000);
-            setTimeout(() => {
-                   templat[2].classList.add("active")
-            },1300);
-    }
+            
+        }else{
+            header1.classList.remove("active");
+        }
+    
+        if(window.scrollY >= skills.offsetTop -200 && window.scrollY <= skills.offsetTop +350){
+            allbox.forEach(e=>{
+                e.classList.add("active")
+            })
+            
+        }else{
+            allbox.forEach(e=>{
+                e.classList.remove("active")
+            })
+    
+            
+        }if(window.scrollY >= myWork.offsetTop -400 && window.scrollY<=myWork.offsetTop+600 ){
+                heading3.classList.add("active")
+                category.classList.add("active")
+                for(let i = 0 ; i<templat.length;i++){
+                    setTimeout(() => {
+                        templat[i].classList.add("active")
+                    },1000);
+                }
+        }
+    } 
+    
     if(window.scrollY >= skills.offsetTop -300){
         up.classList.add("show")
     }else{
         up.classList.remove("show")
 
     }
-}
+
+
 var up = document.querySelector(".up");
 up.onclick = function(){
     window.scrollTo({
