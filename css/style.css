@@ -253,21 +253,10 @@ html {
   opacity: 0;
   transition: 2s;
 }
-@keyframes move {
-  0% {
-    transform: translateY(100px);
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 0.4;
-  }
-  50% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
+.landing .container .info.active {
+  opacity: 1;
 }
+
 .landing .container .info a {
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid var(--text-color);
@@ -334,6 +323,11 @@ html {
   margin-bottom: 60px;
   animation: moveimg 1s;
 }
+.landing .container img.active {
+  height: 350px;
+  width: 350px;
+  opacity: 1;
+}
 @keyframes moveimg {
   0% {
     transform: translateY(100px);
@@ -345,6 +339,10 @@ html {
   }
 }
 @media (max-width: 992px) {
+  .landing .container img.active {
+    height: 300px;
+    width: 300px;
+  }
   .landing .container img {
     height: 300px;
     width: 300px;
