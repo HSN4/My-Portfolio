@@ -21,14 +21,10 @@ cursorScale.forEach(link =>{
     })
 })
 // welcome page and landing information --------------------------------
-var wellcome = document.querySelector(".welcome"),
-    im = document.querySelector(".landing .container img"),
+var im = document.querySelector(".landing .container img"),
     information = document.querySelector(".landing .container .info"),
     heading1 = document.querySelector(".landing .container .info h1");
 window.addEventListener("load",function(){
-    setTimeout(() => {
-        wellcome.classList.add("hide")
-    }, 1000);
     setTimeout(() =>{
         im.classList.add("active")
         information.classList.add("active")
@@ -70,6 +66,61 @@ sun_Icon.onclick = function(){
     icon.style.display='inline-block'
     sun_Icon.classList.remove("iconactiv")
 }
+
+
+// ======================================= categories ===============================================
+var categoryItem=Array.from(document.querySelectorAll(".category li"));
+
+
+function removeAllCard(){
+    templat.forEach(t=>{
+        t.classList.remove("act")
+    })
+}
+// categoryItem.forEach(e=>{
+//     e.onclick = function(){
+//         removeActive()
+//         e.classList.add("active")
+//     }
+// })
+function removeActive(){
+    categoryItem.forEach(e=>{
+        e.classList.remove("active")
+    })
+}
+categoryItem[0].onclick=function(){
+    removeAllCard()
+    templat.forEach(t=>{
+        if(!t.classList.contains("all")){
+            t.classList.add("act")
+        }
+        removeActive()
+        categoryItem[0].classList.add("active")
+    })
+}
+categoryItem[1].onclick=function(){
+    removeAllCard()
+    templat.forEach(t=>{
+        if(!t.classList.contains("frontend")){
+            t.classList.toggle("act")
+        }
+        removeActive()
+        categoryItem[1].classList.add("active")
+    })
+}
+categoryItem[2].onclick=function(){
+    removeAllCard()
+    templat.forEach(t=>{
+        if(!t.classList.contains("ui/ux")){
+            t.classList.add("act")
+        }
+        removeActive()
+        categoryItem[2].classList.add("active")
+    })
+}
+
+// ===========================================================================
+
 
 // animation 
 var skills = document.querySelector(".my-skills"),
