@@ -441,7 +441,7 @@ html {
   position: absolute;
   width: 200px;
   height: 2px;
-  background: #0062c4;
+  background: var(--blue-color);
   bottom: 27%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -458,20 +458,20 @@ html {
   fill: #ff5c00;
 }
 .my-skills .container .box:nth-child(2) path {
-  fill: #0016dc;
+  fill: #3347dc;
 }
 .my-skills .container .box:nth-child(3) path {
-  fill: #ffe500;
+  fill: #f0db4f;
 }
 .my-skills .container .box:nth-child(4) path {
-  fill: #0c009a;
+  fill: #007acc;
 }
 .my-skills .container .box:nth-child(5) path {
-  fill: #00e0ff;
+  fill: #61dafb;
   box-shadow: 0 0 10px 0 #ff000024;
 }
 .my-skills .container .box:nth-child(6) path {
-  fill: #00ffe0;
+  fill: #32c1b5;
   box-shadow: 0 0 10px 0 #00ffe024;
 }
 .my-skills .container .box:nth-child(7) path:nth-child(1) {
@@ -714,12 +714,12 @@ html {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #0062c4;
+  background-color: var(--blue-color);
   transform: scale(1.5, 1);
   transition: ease 0.8s;
 }
 .category li.active {
-  color: #0062c4;
+  color: var(--blue-color);
 }
 .my-works h3 {
   text-align: center;
@@ -742,7 +742,7 @@ html {
   position: absolute;
   width: 200px;
   height: 2px;
-  background: linear-gradient(-45deg, #0062c4, var(--text-color));
+  background: linear-gradient(-45deg, var(--blue-color), var(--text-color));
   bottom: 27%;
   left: 50%;
   transform: translate(-50%, -50%);
