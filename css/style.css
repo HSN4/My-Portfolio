@@ -345,6 +345,8 @@ html {
 .landing .container img {
   height: 380px;
   width: 380px;
+  margin-bottom: 60px;
+
   animation: moveimg 2s;
 }
 
@@ -385,7 +387,6 @@ html {
 @media (max-width: 768px) {
   .landing .container {
     flex-direction: column-reverse;
-    gap: 50px;
   }
   .landing .container .info h2::before {
     display: none;
