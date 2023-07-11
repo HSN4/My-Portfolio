@@ -385,7 +385,7 @@ html {
 @media (max-width: 768px) {
   .landing .container {
     flex-direction: column-reverse;
-    gap: 100px;
+    gap: 50px;
   }
   .landing .container .info h2::before {
     display: none;
