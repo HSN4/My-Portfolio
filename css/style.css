@@ -386,7 +386,7 @@ html {
 }
 @media (max-width: 768px) {
   .landing .container {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .landing .container .info h2::before {
     display: none;
@@ -397,6 +397,7 @@ html {
   }
   .landing .container .info {
     text-align: center;
+    padding-bottom: 100px;
   }
   .landing .container .info h3 {
     font-size: 24px;
