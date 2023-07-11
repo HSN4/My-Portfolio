@@ -12,7 +12,7 @@
 }
 .dark-theme {
   --primary-color: rgb(0 1 11);
-  --shadow: #00000084;
+  --shadow: #fdfdfd0a;
   --text-color: #fafafa;
   --card-color: rgb(255, 255, 255);
 }
@@ -21,7 +21,18 @@ html {
 }
 .icons {
   position: relative;
+
+  background-color: transparent;
+  width: 34px;
+  box-shadow: 0 0 6px 0px var(--shadow);
+  height: 34px;
+  display: flex;
+  border-radius: 50%;
+  /* padding: 0px; */
+  justify-content: center;
+  align-items: center;
 }
+
 .icons .moon {
   width: 17px;
   font-size: 20px;
@@ -35,6 +46,7 @@ html {
   width: 17px;
   cursor: pointer;
   display: none;
+  color: white;
   font-size: 20px;
   transition: 0.4s;
 }
@@ -99,6 +111,11 @@ html {
 }
 .grow-small {
   transform: scale(3);
+}
+@media (max-width: 768px) {
+  .cursor {
+    display: none;
+  }
 }
 /* ------------------------------- start nav -------------------------------------------- */
 
@@ -269,17 +286,27 @@ html {
   margin-left: 4px;
 }
 .landing .container .info a:hover {
-  background-color: white;
-  color: var(--left-color);
+  background-color: var(--blue-color);
+  border: 1px solid var(--blue-color);
+
+  color: white;
 }
-.landing .container .info.active {
-  opacity: 1;
-}
+
 .landing .container .info h3 {
   margin-left: 5px;
   font-family: L;
   font-size: 40px;
   color: var(--text-color);
+  position: relative;
+  animation: moveimgh3 2s;
+}
+@keyframes moveimgh3 {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 0px;
+  }
 }
 .landing .container .info h1 {
   text-transform: uppercase;
@@ -290,9 +317,13 @@ html {
   -webkit-background-clip: text;
   background-position: 0 0;
   font-family: B;
+  padding-left: 200px;
   animation: back 20s linear infinite;
+  transition: 2s;
 }
-
+.landing .container .info h1.active {
+  padding-left: 0px;
+}
 @keyframes back {
   100% {
     background-position: 2000px 0;
@@ -320,18 +351,14 @@ html {
 .landing .container img {
   height: 380px;
   width: 380px;
-  margin-bottom: 60px;
-  animation: moveimg 1s;
+  margin-left: 60px;
+  animation: moveimg 2s;
 }
-.landing .container img.active {
-  height: 350px;
-  width: 350px;
-  opacity: 1;
-}
+
 @keyframes moveimg {
   0% {
-    transform: translateY(100px);
-    opacity: 0.2;
+    transform: translateX(150px);
+    opacity: 0;
   }
 
   100% {
@@ -398,7 +425,7 @@ html {
 
 /* ----------------------------- start my skills --------------------------------------- */
 .my-skills {
-  padding: 80px 0;
+  padding: 20px 0 0 0;
   background-color: var(--primary-color);
 }
 .my-skills h1 {
@@ -429,6 +456,7 @@ html {
   display: flex;
   flex-direction: row;
   gap: 30px;
+  padding-top: 50px;
   justify-content: center;
   align-items: center;
 }
@@ -579,6 +607,12 @@ html {
 .up.show {
   right: 20px;
 }
+@media (max-width: 992px) {
+  .my-skills .container {
+    flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 786px) {
   .my-skills {
     padding: 80px 0 0 0px;
@@ -842,7 +876,7 @@ html {
 
 .contact-me .container .all-contant {
   padding: 50px 50px;
-  box-shadow: 0 0 20px 0px var(--shadow);
+  box-shadow: 0 0 8px 0px var(--shadow);
   display: flex;
   flex-wrap: wrap;
   align-items: center;

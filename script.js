@@ -25,11 +25,9 @@ var im = document.querySelector(".landing .container img"),
     information = document.querySelector(".landing .container .info"),
     heading1 = document.querySelector(".landing .container .info h1");
 window.addEventListener("load",function(){
-    setTimeout(() =>{
         im.classList.add("active")
         information.classList.add("active")
         heading1.classList.add("active")
-    },1000)
 })
 // nav -----------------------------------------------------------------
 var toggler = document.querySelector(".toggler"),
