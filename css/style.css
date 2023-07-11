@@ -5,15 +5,15 @@
 }
 :root {
   --primary-color: rgb(255, 255, 255);
-  --shadow: #00000015;
+  --shadow: #00000024;
   --text-color: #0c0c0c;
   --blue-color: #0062c4;
   --card-color: rgba(247, 247, 247, 0.018);
 }
 .dark-theme {
-  --primary-color: rgb(0 1 11);
-  --shadow: #fdfdfd0a;
-  --text-color: #fafafa;
+  --primary-color: #121212;
+  --shadow: #fdfdfd23;
+  --text-color: rgb(250 250 250 / 87%);
   --card-color: rgb(255, 255, 255);
 }
 html {
@@ -32,7 +32,6 @@ html {
 }
 
 .icons .moon {
-  width: 17px;
   font-size: 20px;
   cursor: pointer;
   transition: 0.4s;
@@ -41,7 +40,6 @@ html {
   font-size: 24px;
 }
 .icons .sun-icon {
-  width: 17px;
   cursor: pointer;
   display: none;
   color: white;
@@ -690,6 +688,7 @@ html {
   font-size: 24px;
   position: relative;
   transition: 0.6s;
+  cursor: pointer;
 }
 .category li::after {
   content: "";
@@ -757,8 +756,8 @@ html {
   margin-top: 80px;
   width: 314px;
   height: 342px;
-  background-color: var(--card-color);
-  box-shadow: 0px 2px 18px 0px #00000028;
+  background-color: var(--primary-color);
+  box-shadow: 0px 2px 18px 0px var(--shadow);
   opacity: 0;
   border-radius: 24px;
   overflow: hidden;
@@ -810,32 +809,36 @@ html {
 .my-works .container .templet h1 {
   font-family: R;
   font-size: 18px;
+  color: var(--text-color);
   margin-top: 8px;
 }
 .my-works .container .templet h2 {
   font-family: L;
   font-size: 14px;
-  color: #474747;
+  color: var(--text-color);
 }
 .my-works .container .templet .view {
   text-decoration: none;
-  border: 1px solid var(--right-color);
+  border: 1px solid var(--text-color);
   padding: 8px 28px;
   font-family: M;
   font-size: 16px;
   background: transparent;
   border-radius: 14px;
-  color: var(--right-color);
+  color: var(--text-color);
   transition: 1s;
   margin-top: 15px;
 }
-.my-works .container .templet .view:hover {
-  background: linear-gradient(-45deg, var(--left-color), var(--right-color));
-  color: var(--primary-color);
+.my-works .container .templet:hover .view {
+  background-color: var(--blue-color);
+  border: 1px solid var(--blue-color);
+  color: white;
 }
 .icon-work {
   position: absolute;
   bottom: 16px;
+  color: var(--text-color);
+
   font-size: 29px;
   right: 16px;
 }
