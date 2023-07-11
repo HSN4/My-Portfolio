@@ -21,14 +21,12 @@ html {
 }
 .icons {
   position: relative;
-
   background-color: transparent;
   width: 34px;
   box-shadow: 0 0 6px 0px var(--shadow);
   height: 34px;
   display: flex;
   border-radius: 50%;
-  /* padding: 0px; */
   justify-content: center;
   align-items: center;
 }
@@ -202,7 +200,7 @@ html {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: black;
+  background-color: var(--text-color);
 }
 
 @media (max-width: 768px) {
@@ -247,15 +245,13 @@ html {
   }
   .icons {
     position: absolute;
-    right: 60px;
+    right: 76px;
     transform: rotateZ(-12deg);
-    width: 40px;
   }
 }
 /* ------------------------- start landing ---------------------*/
 .landing {
   background: var(--primary-color);
-
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -351,7 +347,6 @@ html {
 .landing .container img {
   height: 380px;
   width: 380px;
-  margin-left: 60px;
   animation: moveimg 2s;
 }
 
@@ -393,6 +388,7 @@ html {
 @media (max-width: 768px) {
   .landing .container {
     flex-direction: column-reverse;
+    gap: 100px;
   }
   .landing .container .info h2::before {
     display: none;
