@@ -260,6 +260,45 @@ html {
   justify-content: space-between;
   align-items: center;
 }
+.dynamic-text {
+  height: 24px;
+  overflow: hidden;
+  font-family: M;
+  margin: 0px 0 20px 7px;
+}
+.dynamic-text li {
+  list-style: none;
+  position: relative;
+  top: 0;
+  animation: slide 6s steps(2) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -47px;
+  }
+}
+.dynamic-text li span {
+  position: relative;
+  font-size: 20px;
+}
+.dynamic-text li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary-color);
+  border-left: 2px solid black;
+  animation: typing 3s steps(16) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
 .landing .container .info {
   opacity: 0;
   transition: 2s;
@@ -342,6 +381,7 @@ html {
   margin-bottom: 30px;
   letter-spacing: 1px;
 }
+
 .landing .container img {
   height: 380px;
   width: 380px;
@@ -387,6 +427,7 @@ html {
 @media (max-width: 768px) {
   .landing .container {
     flex-direction: column-reverse;
+    gap: 50px;
   }
   .landing .container .info h2::before {
     display: none;
