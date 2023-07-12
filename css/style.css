@@ -248,7 +248,9 @@ html {
     transform: rotateZ(-12deg);
   }
 }
+
 /* ------------------------- start landing ---------------------*/
+
 .landing {
   background: var(--primary-color);
   height: 100vh;
@@ -271,12 +273,12 @@ html {
   list-style: none;
   position: relative;
   top: 0;
-  animation: slide 6s steps(2) infinite;
+  animation: slide 8s steps(2) infinite;
 }
 
 @keyframes slide {
   100% {
-    top: -47px;
+    top: -48px;
   }
 }
 .dynamic-text li span {
@@ -292,13 +294,13 @@ html {
   width: 100%;
   background-color: var(--primary-color);
   border-left: 2px solid var(--text-color);
-  animation: typing 3s steps(16) infinite;
+  animation: typing 4s steps(18) infinite;
 }
 
 @keyframes typing {
   100% {
     left: 100%;
-    margin: 0 -35px 0 35px;
+    margin: 0 -25px 0 25px;
   }
 }
 .landing .container .info {
