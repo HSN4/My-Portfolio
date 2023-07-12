@@ -1038,16 +1038,16 @@ textarea:focus {
   font-family: L;
 }
 .social a:nth-child(1):hover {
-  color: #ff006fad;
+  color: #0073ffad;
 }
 .social a:nth-child(2):hover {
-  color: #2592f1ad;
+  color: #000000ad;
 }
 .social a:nth-child(3):hover {
-  color: #222222;
+  color: #0011ff;
 }
 .social a:nth-child(4):hover {
-  color: #004cff;
+  color: #000000;
 }
 .contact-form form button {
   background-color: transparent;
@@ -1102,6 +1102,7 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: var(--primary-color);
+  border-top: 1px solid rgba(199, 199, 199, 0.088);
 }
 footer div h1 {
   font-size: 20px;
