@@ -273,12 +273,12 @@ html {
   list-style: none;
   position: relative;
   top: 0;
-  animation: slide 8s steps(2) infinite;
+  animation: slide 7s steps(2) infinite;
 }
 
 @keyframes slide {
   100% {
-    top: -50px;
+    top: -51.1px;
   }
 }
 .dynamic-text li span {
@@ -294,7 +294,7 @@ html {
   width: 100%;
   background-color: var(--primary-color);
   border-left: 2px solid var(--text-color);
-  animation: typing 4s steps(18) infinite;
+  animation: typing 3.5s steps(18) infinite;
 }
 
 @keyframes typing {
