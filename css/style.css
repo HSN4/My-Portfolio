@@ -278,7 +278,7 @@ html {
 
 @keyframes slide {
   100% {
-    top: -48px;
+    top: -50px;
   }
 }
 .dynamic-text li span {
