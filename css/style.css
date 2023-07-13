@@ -113,7 +113,7 @@ html {
 .grow-small {
   transform: scale(3);
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .cursor {
     display: none;
   }
@@ -434,14 +434,14 @@ html {
 @media (max-width: 768px) {
   .landing .container {
     flex-direction: column-reverse;
-    gap: 50px;
+    gap: 20px;
   }
   .landing .container .info h2::before {
     display: none;
   }
   .landing .container img {
-    height: 240px;
-    width: 240px;
+    height: 220px;
+    width: 220px;
   }
   .landing .container .info {
     text-align: center;
@@ -1108,13 +1108,15 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid rgba(199, 199, 199, 0.088);
+  border-top: 1px solid rgba(140, 140, 140, 0.207);
 }
 footer div h1 {
   font-size: 20px;
   font-family: L;
   color: var(--text-color);
 }
-footer path {
-  font-size: 12px;
+@media (max-width: 620px) {
+  footer div h1 {
+    font-size: 14px;
+  }
 }
