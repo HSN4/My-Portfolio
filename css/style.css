@@ -281,7 +281,7 @@ html {
 
 @keyframes slide {
   100% {
-    top: -51.5px;
+    top: -51.6px;
   }
 }
 .dynamic-text li span {
@@ -939,7 +939,7 @@ html {
   flex-direction: column;
 }
 .contact-me .container .contact-info h2 {
-  font-family: L;
+  font-family: R;
   font-size: 20px;
 }
 .contact-me .container .contact-info .info {
@@ -1042,7 +1042,7 @@ textarea:focus {
 }
 .contact-me .container .contact-info .con-social h1 {
   font-size: 20px;
-  font-family: L;
+  font-family: R;
 }
 .social a:nth-child(1):hover {
   color: #0073ffad;
