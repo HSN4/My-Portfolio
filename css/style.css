@@ -284,6 +284,13 @@ html {
     top: -51.6px;
   }
 }
+@media (max-width: 620px) {
+  @keyframes slide {
+    100% {
+      top: -52px;
+    }
+  }
+}
 .dynamic-text li span {
   position: relative;
   font-size: 20px;
