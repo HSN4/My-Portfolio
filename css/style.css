@@ -860,8 +860,14 @@ html {
 }
 .my-works .container .templet h2 {
   font-family: L;
-  font-size: 14px;
+  font-size: 13px;
   color: var(--text-color);
+}
+.my-works .container .templet h2 span {
+  padding: 0 1px;
+}
+.my-works .container .templet:hover h2 span {
+  color: var(--blue-color);
 }
 .my-works .container .templet .view {
   text-decoration: none;
