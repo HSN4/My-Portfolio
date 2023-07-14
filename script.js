@@ -162,16 +162,14 @@ window.onscroll=function(){
                     },1000);
                 }
         }
-    } 
-    
-    if(window.scrollY >= skills.offsetTop -300){
-        up.classList.add("show")
-    }else{
-        up.classList.remove("show")
+        if(window.scrollY >= skills.offsetTop -300){
+            up.classList.add("show")
+        }else{
+            up.classList.remove("show")
 
-    }
+        }
 
-
+}
 var up = document.querySelector(".up");
 up.onclick = function(){
     window.scrollTo({
