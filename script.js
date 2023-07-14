@@ -1,4 +1,7 @@
-
+let cv = document.querySelector(".cv");
+cv.onclick=()=>{
+    alert("cv is not complete (;")
+}
 let cursor = document.querySelector(".cursor"),
 cursorScale = document.querySelectorAll(".cursor-Scale");
 document.addEventListener('mousemove',e =>{
