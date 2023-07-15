@@ -943,7 +943,7 @@ html {
 }
 /* ================================= contact me ======================================= */
 .contact-me {
-  padding: 80px 0 30px 0;
+  padding: 40px 0 30px 0;
   position: relative;
 }
 
@@ -1127,6 +1127,9 @@ textarea:focus {
   }
   .contact-me .container .contact-form h1 {
     font-size: 28px;
+  }
+  .contact-me .container .all-contant {
+    padding: 30px 0px;
   }
 }
 /* ======================================footer========================================= */
