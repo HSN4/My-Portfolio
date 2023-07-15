@@ -273,13 +273,13 @@ html {
   height: 24px;
   overflow: hidden;
   font-family: M;
-  margin: 0px 0 20px 5px;
+  margin: 10px 0 20px 5px;
 }
 .dynamic-text li {
   list-style: none;
   position: relative;
   top: 0;
-  animation: slide 7s steps(2) infinite;
+  animation: slide 4s steps(2) infinite;
 }
 
 @keyframes slide {
@@ -287,13 +287,7 @@ html {
     top: -51.6px;
   }
 }
-@media (max-width: 620px) {
-  @keyframes slide {
-    100% {
-      top: -52px;
-    }
-  }
-}
+
 .dynamic-text li span {
   position: relative;
   font-size: 20px;
@@ -307,9 +301,22 @@ html {
   width: 100%;
   background-color: var(--primary-color);
   border-left: 2px solid var(--text-color);
-  animation: typing 3.5s steps(18) infinite;
+  animation: typing 2s steps(12) infinite;
 }
-
+@media (max-width: 620px) {
+  @keyframes slide {
+    100% {
+      top: -42px;
+    }
+  }
+  .dynamic-text li span {
+    font-size: 16px;
+  }
+  .dynamic-text {
+    height: 18px;
+    font-family: M;
+  }
+}
 @keyframes typing {
   100% {
     left: 100%;
@@ -391,7 +398,7 @@ html {
 
 .landing .container .info p {
   margin-left: 5px;
-  color: var(--text-color);
+  color: #505050;
   font-family: M;
   font-size: 14px;
   max-width: 380px;
@@ -418,10 +425,6 @@ html {
   }
 }
 @media (max-width: 992px) {
-  .landing .container img.active {
-    height: 300px;
-    width: 300px;
-  }
   .landing .container img {
     height: 300px;
     width: 300px;
@@ -450,15 +453,16 @@ html {
     display: none;
   }
   .landing .container img {
-    height: 220px;
-    width: 220px;
+    height: 200px;
+    width: 200px;
   }
   .landing .container .info {
     text-align: center;
     padding-bottom: 100px;
   }
   .landing .container .info h3 {
-    font-size: 24px;
+    font-size: 20px;
+    margin-bottom: 6px;
   }
   .landing .container .info h1 {
     font-family: B;
