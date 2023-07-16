@@ -645,8 +645,8 @@ html {
     flex-wrap: wrap;
   }
   .my-skills .container .box {
-    margin-top: 12px;
-    width: 84px;
+    margin-top: 10px;
+    width: 90px;
     height: 100px;
   }
   .my-skills .container .box .icon {
@@ -678,7 +678,7 @@ html {
     width: 41px;
   }
   .my-skills .container .box h2 {
-    font-size: 11px;
+    font-size: 12px;
   }
   .up {
     padding: 12px 16px;
