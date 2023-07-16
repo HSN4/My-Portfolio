@@ -251,7 +251,7 @@ html {
     height: 40px;
   }
   .icons {
-    margin-right: 10px;
+    margin-right: 16px;
     transform: rotateZ(-12deg);
   }
 }
