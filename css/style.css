@@ -293,10 +293,6 @@ html {
   .dynamic-text li span {
     font-size: 16px;
   }
-  .dynamic-text {
-    height: 18px;
-    font-family: M;
-  }
 }
 .landing .container .info {
   opacity: 0;
