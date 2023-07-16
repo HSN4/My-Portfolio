@@ -646,8 +646,8 @@ html {
   }
   .my-skills .container .box {
     margin-top: 10px;
-    width: 90px;
-    height: 100px;
+    width: 100px;
+    height: 110px;
   }
   .my-skills .container .box .icon {
     font-size: 40px;
@@ -674,9 +674,6 @@ html {
     transform: translateY(160px);
   }
 
-  .my-skills .container svg {
-    width: 41px;
-  }
   .my-skills .container .box h2 {
     font-size: 12px;
   }
