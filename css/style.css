@@ -477,9 +477,9 @@ html {
 .my-skills .container {
   display: flex;
   flex-direction: row;
-  gap: 30px;
   padding-top: 50px;
-  justify-content: center;
+
+  justify-content: space-between;
   align-items: center;
 }
 .my-skills .container .box:nth-child(1) path {
@@ -643,7 +643,7 @@ html {
   }
   .my-skills .container .box {
     margin-top: 10px;
-    width: 100px;
+    width: 90px;
     height: 110px;
   }
   .my-skills .container .box .icon {
