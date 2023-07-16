@@ -147,7 +147,7 @@ html {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .header .container .main-nav {
   display: flex;
@@ -217,6 +217,9 @@ html {
 }
 
 @media (max-width: 768px) {
+  .header .container {
+    justify-content: space-between;
+  }
   .header .container .main-nav {
     flex-direction: column;
     top: 80px;
@@ -642,9 +645,9 @@ html {
     flex-wrap: wrap;
   }
   .my-skills .container .box {
-    margin-top: 10px;
-    width: 90px;
-    height: 110px;
+    margin-top: 20px;
+    width: 118px;
+    height: 120px;
   }
   .my-skills .container .box .icon {
     font-size: 40px;
