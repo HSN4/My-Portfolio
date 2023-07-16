@@ -284,46 +284,18 @@ html {
   top: 0;
   animation: slide 4s steps(2) infinite;
 }
-
-@keyframes slide {
-  100% {
-    top: -51.6px;
-  }
-}
-
 .dynamic-text li span {
   position: relative;
   font-size: 20px;
   color: var(--text-color);
 }
-.dynamic-text li span::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--primary-color);
-  border-left: 2px solid var(--text-color);
-  animation: typing 2s steps(12) infinite;
-}
 @media (max-width: 620px) {
-  @keyframes slide {
-    100% {
-      top: -42px;
-    }
-  }
   .dynamic-text li span {
     font-size: 16px;
   }
   .dynamic-text {
     height: 18px;
     font-family: M;
-  }
-}
-@keyframes typing {
-  100% {
-    left: 100%;
-    margin: 0 -25px 0 25px;
   }
 }
 .landing .container .info {

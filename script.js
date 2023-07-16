@@ -1,3 +1,11 @@
+var typed = new Typed(".auto-type",{
+    strings : ["Frontend developer" , "UI/UX Designer"],
+    typeSpeed : 60,
+    backSpeed : 60,
+    loop :true,
+})
+// =====================================================================
+
 let cv = document.querySelector(".cv");
 cv.onclick=()=>{
     alert("cv is not complete (;")
