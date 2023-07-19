@@ -920,11 +920,11 @@ html {
   position: relative;
 }
 .contact-me .container {
-  padding: 60px 0;
   border-top: 1px solid #22222291;
   width: 100%;
 }
 .contact-me .container .all-contant {
+  padding: 60px 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -969,7 +969,7 @@ html {
   font-family: M;
   display: flex;
   flex-wrap: wrap;
-  width: 500px;
+  width: 600px;
 }
 .contact-me .container form div {
   display: flex;
