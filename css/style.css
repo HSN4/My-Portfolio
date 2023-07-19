@@ -327,7 +327,7 @@ html {
 .landing .container .info h1 {
   margin-left: 3px;
   font-family: L;
-  font-size: 40px;
+  font-size: 32px;
   color: var(--text-color);
   position: relative;
   letter-spacing: 1px;
