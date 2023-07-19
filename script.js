@@ -1,9 +1,12 @@
+// auto typing text 
+
 var typed = new Typed(".auto-type",{
     strings : ["Frontend developer" , "UI/UX Designer"],
     typeSpeed : 60,
     backSpeed : 60,
     loop :true,
 })
+
 // =====================================================================
 
 let cv = document.querySelector(".cv");
@@ -21,6 +24,8 @@ cursorScale.forEach(link =>{
     link.addEventListener("mouseleave",()=>{
         cursor.classList.remove("grow" )
         cursor.classList.remove("grow-small")
+        cursor.classList.remove("remove")
+
 
     });
     link.addEventListener("mousemove",()=>{
@@ -30,17 +35,28 @@ cursorScale.forEach(link =>{
             cursor.classList.add("grow-small")
         }
     })
+    link.addEventListener("mousemove",()=>{
+        cursor.classList.add("grow" )
+        if(link.classList.contains("full")){
+            cursor.classList.remove("grow"),
+            cursor.classList.add("remove")
+        }
+    })
 })
+
 // welcome page and landing information --------------------------------
+
 var im = document.querySelector(".landing .container img"),
     information = document.querySelector(".landing .container .info"),
-    heading1 = document.querySelector(".landing .container .info h1");
+    heading1 = document.querySelector(".landing .container .info h2");
 window.addEventListener("load",function(){
         im.classList.add("active")
         information.classList.add("active")
         heading1.classList.add("active")
 })
+
 // nav -----------------------------------------------------------------
+
 var toggler = document.querySelector(".toggler"),
     nav = document.querySelector(".main-nav")
 
@@ -55,6 +71,7 @@ document.querySelectorAll(".nav-link").forEach((item)=>{ item.
 });
 
 // link small screen------------------------------------------------------
+
 document.querySelectorAll("ul li a") .forEach((itm) =>{
     itm.addEventListener("click",()=> {
         document.querySelector("a.active").classList.remove("active");
@@ -63,6 +80,7 @@ document.querySelectorAll("ul li a") .forEach((itm) =>{
 }); 
 
 // dark mode 
+
 var icon = document.querySelector(".moon"),
     sun_Icon = document.querySelector(".sun-icon")
 icon.onclick = function(){
@@ -78,6 +96,7 @@ sun_Icon.onclick = function(){
 
 
 // ======================================= categories ===============================================
+
 var categoryItem=Array.from(document.querySelectorAll(".category li"));
 
 
@@ -86,12 +105,6 @@ function removeAllCard(){
         t.classList.remove("act")
     })
 }
-// categoryItem.forEach(e=>{
-//     e.onclick = function(){
-//         removeActive()
-//         e.classList.add("active")
-//     }
-// })
 function removeActive(){
     categoryItem.forEach(e=>{
         e.classList.remove("active")
@@ -130,8 +143,8 @@ categoryItem[2].onclick=function(){
 
 // ===========================================================================
 
-
 // animation 
+
 var skills = document.querySelector(".my-skills"),
     header1 = document.querySelector(".my-skills h1");
 
@@ -179,7 +192,6 @@ window.onscroll=function(){
             up.classList.remove("show")
 
         }
-
 }
 var up = document.querySelector(".up");
 up.onclick = function(){
