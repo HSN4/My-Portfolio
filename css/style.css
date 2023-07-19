@@ -9,7 +9,7 @@
   --primary-color: rgb(255, 255, 255);
   --shadow: #00000024;
   --text-color: #0c0c0c;
-  --blue-color: #0062c4;
+  --blue-color: #193dcb;
   --icon-shadow: #00000011;
   --p-color: rgb(0 0 0 / 64%);
 }
@@ -202,13 +202,13 @@ html {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #0062c4;
+  background-color: var(--blue-color);
   text-align: center;
   transform: scale(1.5, 1);
   transition: ease 0.8s;
 }
 .header .container .main-nav a.active {
-  color: #0062c4;
+  color: var(--blue-color);
 }
 .toggler {
   display: none;
@@ -432,7 +432,7 @@ html {
   .landing .container .info h2 {
     font-family: B;
     font-size: 38px;
-    color: var(--primary-color);
+    color: var(--blue-color);
   }
   .landing .container .info h1 {
     padding: 10px 0px;
