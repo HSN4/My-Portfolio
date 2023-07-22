@@ -417,9 +417,6 @@ html {
     flex-direction: column-reverse;
     gap: 20px;
   }
-  .landing .container .info h1::before {
-    display: none;
-  }
   .landing .container img {
     height: 210px;
     width: 210px;
@@ -435,7 +432,7 @@ html {
   }
   .landing .container .info h1 {
     padding: 10px 0px;
-    font-size: 14px;
+    font-size: 15px;
   }
   .landing .container .info p {
     font-size: 12px;
