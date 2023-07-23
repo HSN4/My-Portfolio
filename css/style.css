@@ -645,7 +645,7 @@ html {
   .my-skills .container {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 18px;
   }
   .my-skills .container .box {
     margin-top: 20px;
